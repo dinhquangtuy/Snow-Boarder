@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour {
 
     void Update() {
         float moveInput = Input.GetAxisRaw("Horizontal");
-        Debug.Log(moveInput);
         _rb2d.AddTorque(-moveInput * torqueAmount);
     }
 }
